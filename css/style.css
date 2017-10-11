@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #070707 url("../img/background-min.png") top center no-repeat;
+    font-size: 0;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+header {
+    background: black;
+    margin-bottom: 58px;
+    display: block;
+}
+
+nav {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: black;
+}
+
+nav a {
+    display: block;
+    padding: 24px 22px;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    background: #242424;
+}
+
+.nav-buttons {
+    width: 780px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.nav-buttons li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-buttons a {
+    position: relative;
+}
+
+.nav-buttons .active:after {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 20px;
+    right: 20px;
+    background: white;
+}
+
+.nav-login {
+    float: right;
+    max-width: 140px;
+}
+
+.nav-login a:before {
+    margin-right: 12px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprites-min.png) 0 -210px no-repeat;
+    opacity: 0.3;
+}
+
+.nav-login a:hover::before {
+    opacity: 1;
+}
+
+/*main-content*/
+
+.main-content {
+    padding: 0 10px;
+    margin: 0 auto;
+    display: block;
+    height: 1450px;
+    width: 940px;
+}
+
+/*logo*/
+
+.main-content > img {
+    margin: 0 auto;
+    display: block;
+    width: 368px;
+    height: 204px;
+}
+
+/*features*/
+
+.features div {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 200px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features div:last-child {
+    margin-right: 0;
+}
+
+.features h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-bottom: 45px;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    color: white;
+}
+
+.features h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate(45deg);
+}
+
+.features p {
+    margin: 0;
+    padding: 0 25px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.main-info {
+    position: relative;
+    height: 430px;
+    /*    background: #f8f5f2 url("../img/patern-2-min.png");*/
+    background: #f8f5f2;
+    margin-bottom: 35px;
+    z-index: 0;
+}
+
+.main-info:last-child {
+    margin-bottom: 65px;
+}
+
+.main-info img {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -4px;
+}
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    background: #232323 url("../img/patern-1-min.png");
+}
+
+.footer-info {
+    margin: 0 auto;
+    display: block;
+    width: 940px;
+    padding: 0 10px;
+}
+
+.footer-info > div {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 190px;
+}
+
+.footer-info > div:last-child {
+    margin-right: 0;
+}
+
+.footer-info h4 {
+    margin: 0;
+    margin-top: 58px;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-info p {
+    margin-top: 58px;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer-info-soc {
+    margin: 0 auto;
+    width: 141px;
+}
+
+.footer-info-soc a {
+    margin-right: 6px;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: black;
+}
+
+.footer-info-soc a:nth-child(1) {
+    background: black url("../img/sprites-min.png") 9px -825px no-repeat;
+}
+
+.footer-info-soc a:nth-child(2) {
+    background: black url("../img/sprites-min.png") 15px -550px no-repeat;
+}
+
+.footer-info-soc a:nth-child(3) {
+    background: black url("../img/sprites-min.png") 12px -690px no-repeat;
+}
+
+.footer-info-soc a:hover:nth-child(1) {
+    background: white url("../img/sprites-min.png") 9px -759px no-repeat;
+}
+
+.footer-info-soc a:hover:nth-child(2) {
+    background: white url("../img/sprites-min.png") 15px -478px no-repeat;
+}
+
+.footer-info-soc a:hover:nth-child(3) {
+    background: white url("../img/sprites-min.png") 12px -618px no-repeat;
+}
+
+.footer-info-soc a:last-child {
+    margin-right: 0;
+}
+
+.footer-info > div:last-child {
+    text-align: right;
+}
+
+.footer-info-creater {
+    display: inline-block;
+}
+
+.footer-info-creater a {
+    margin: 0;
+    display: inline-block;
+    padding: 9px 30px;
+    background: black;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+
+.footer-info-creater a:hover {
+    background: white;
+    color: black;
+}
