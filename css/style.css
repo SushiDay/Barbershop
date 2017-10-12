@@ -5,7 +5,6 @@ body {
     font-size: 0;
     font-family: "PT Sans Narrow", sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .clearfix:after {
@@ -116,7 +115,6 @@ nav a:active {
     display: inline-block;
     vertical-align: top;
     width: 300px;
-    height: 200px;
 }
 
 .features {
@@ -127,7 +125,7 @@ nav a:active {
     margin-right: 0;
 }
 
-.features h3 {
+.features h5 {
     margin: 0;
     margin-bottom: 30px;
     padding-bottom: 45px;
@@ -139,7 +137,7 @@ nav a:active {
     color: white;
 }
 
-.features h3:after {
+.features h5:after {
     content: "";
     display: block;
     position: absolute;
@@ -154,7 +152,7 @@ nav a:active {
 
 .features p {
     margin: 0;
-    padding: 0 25px;
+    padding: 0 20px;
     text-align: center;
     font-size: 14px;
     line-height: 24px;
@@ -181,8 +179,66 @@ nav a:active {
     margin-left: -4px;
 }
 
+.main-info > div {
+    margin-left: 80px;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 100%;
+    outline: 1px solid red;
+}
 
+.main-info > div:last-child {
+    margin-left: 180px;
+}
 
+.main-info h3 {
+    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.main-info p {
+    margin: 0;
+    color: black;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.main-info time {
+    color: black;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.main-info-lcolumn div {
+    margin-bottom: 28px;
+}
+
+.main-info-lcolumn a {
+    margin-right: 20px;
+    padding: 9.5px 30.8px;
+    display: inline-block;
+    background: black;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.main-info-lcolumn a:last-child {
+    padding: 9.5px 25px;
+    margin-right: 0;
+}
+
+.main-info a:hover {
+    background: #663d15;
+}
 
 
 
@@ -284,7 +340,7 @@ footer {
 .footer-info-creater a {
     margin: 0;
     display: inline-block;
-    padding: 9px 30px;
+    padding: 9.5px 30px;
     background: black;
     font-size: 14px;
     line-height: 24px;
