@@ -1,4 +1,4 @@
-body {
+.body-index {
     margin: 0;
     padding: 0;
     background: #070707 url("../img/background-min.png") top center no-repeat;
@@ -162,8 +162,7 @@ nav a:active {
 .main-info {
     position: relative;
     height: 430px;
-    /*    background: #f8f5f2 url("../img/patern-2-min.png");*/
-    background: #f8f5f2;
+    background: #f8f5f2 url("../img/patern-2-min.png");
     margin-bottom: 35px;
     z-index: 0;
 }
@@ -172,7 +171,7 @@ nav a:active {
     margin-bottom: 65px;
 }
 
-.main-info img {
+.main-info > img {
     position: absolute;
     display: block;
     left: 50%;
@@ -180,16 +179,37 @@ nav a:active {
 }
 
 .main-info > div {
+    position: relative;
     margin-left: 80px;
     display: inline-block;
     vertical-align: top;
     width: 300px;
     height: 100%;
-    outline: 1px solid red;
 }
 
 .main-info > div:last-child {
     margin-left: 180px;
+}
+
+.gallery a {
+    display: inline-block;
+    margin: 0;
+    margin-right: 4%;
+    margin-top: 4%;
+    padding: 0;
+    width: 48%;
+}
+
+.gallery a:hover {
+    opacity: .8;
+}
+
+.main-info-rcolumn a:nth-child(even) {
+    margin-right: 0;
+}
+
+.main-info-rcolumn a:nth-child(1), .main-info-rcolumn a:nth-child(2) {
+    margin-top: 0;
 }
 
 .main-info h3 {
@@ -208,6 +228,11 @@ nav a:active {
     line-height: 24px;
 }
 
+.main-info-rcolumn div {
+    height: 266px;
+    overflow-y: auto;
+}
+
 .main-info time {
     color: black;
     font-size: 14px;
@@ -216,34 +241,98 @@ nav a:active {
     text-transform: lowercase;
 }
 
+.main-info .work-time {
+    text-transform: uppercase;
+    font-style: normal;
+}
+
 .main-info-lcolumn div {
     margin-bottom: 28px;
 }
 
 .main-info-lcolumn a {
     margin-right: 20px;
-    padding: 9.5px 30.8px;
+    height: 43px;
+    line-height: 43px;
+    width: 140px;
+    text-align: center;
     display: inline-block;
     background: black;
     text-decoration: none;
     color: white;
     font-size: 14px;
-    line-height: 24px;
 }
 
 .main-info-lcolumn a:last-child {
-    padding: 9.5px 25px;
     margin-right: 0;
 }
 
-.main-info a:hover {
+.main-info-lcolumn a:hover {
     background: #663d15;
 }
+
+form input[type="text"] {
+    padding: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 140px;
+    height: 43px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    border: 2px solid black;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #663d15;
+}
+
+input::-moz-placeholder {
+    color: black; 
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+}
+
+form input[type="text"]:nth-child(odd) {
+    margin-right: 0;
+}
+
+.main-info-rcolumn p {
+    margin-bottom: 18px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    height: 43px;
+    margin-top: 8px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background: #663d15;
+    cursor: pointer;
+}
+
+
 
 
 
 /*footer*/
-
 footer {
     background: #232323 url("../img/patern-1-min.png");
 }
@@ -340,16 +429,38 @@ footer {
 .footer-info-creater a {
     margin: 0;
     display: inline-block;
-    padding: 9.5px 30px;
+    height: 43px;
+    width: 140px;
     background: black;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 43px;
     text-decoration: none;
     color: white;
-    vertical-align: middle;
+    text-align: center;
 }
 
 .footer-info-creater a:hover {
     background: white;
     color: black;
+}
+
+
+.body-authorization {
+    margin: 0;
+    padding: 0;
+    background: #070707;
+    font-size: 0;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.autho-block {
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    display: block;
+    height: 550px;
+    width: 940px;
+    outline: 1px solid white;
 }
