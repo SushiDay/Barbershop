@@ -272,7 +272,7 @@ nav a:active {
 }
 
 form input[type="text"] {
-    padding: 15px;
+    padding-left: 15px;
     display: inline-block;
     box-sizing: border-box;
     width: 140px;
@@ -283,7 +283,7 @@ form input[type="text"] {
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: bold;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 43px;
     color: black;
     border: 2px solid black;
 }
@@ -293,13 +293,19 @@ form input[type="text"]:focus {
     border-color: #663d15;
 }
 
-input::-moz-placeholder {
-    color: black; 
-}
-
 input::-webkit-input-placeholder {
     color: black;
 }
+
+input::-moz-placeholder {
+    color: black;
+    opacity: 1;
+}
+
+input:required {
+    box-shadow:none;
+}
+
 
 form input[type="text"]:nth-child(odd) {
     margin-right: 0;
