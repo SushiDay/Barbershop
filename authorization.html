@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet"> 
 </head>
     
-<body class="body-authorization">
+<body>
     <header>
-        <nav class="clearfix">
-            <ul class="nav-buttons">
+        <nav class="main-menu clearfix">
+            <ul class="main-menu-sections">
                 <li><a href="">Главная</a></li>
                 <li><a href="">Информация</a></li>
                 <li><a href="">Новости</a></li>
@@ -19,29 +19,46 @@
                 <li><a href="">Магазин</a></li>
                 <li><a href="">Контакты</a></li>
             </ul>
-            <div class="nav-login">
-                <a href="">Вход</a>
+            <div class="main-menu-login">
+                <a class="active" href="">Вход</a>
             </div>
         </nav>
     </header>
-    <wraper class="autho-block">
-        
+    <wraper class="authorization-block">
+        <section>
+            <form action="">
+                <h3>Личный кабинет</h3>
+                <p>Введите, пожалуйста, свой логин и пароль</p>
+                <div>
+                    <input type="text" placeholder="Логин" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Пароль" required>
+                </div>
+                <div class="authorization-block-buttons clearfix">
+                    <input id="login-rem" type="checkbox" name="checkbox1"/>
+                    <label for="login-rem">Запомнить меня</label>
+                    <a href="">Я забыл пароль!</a>
+                </div>
+                <input type="submit" value="Войти">
+            </form>
+        </section>
     </wraper>
     <footer>
-        <section class="footer-info">
+        <section class="contact-info">
             <div>
                 <p>Barbershop &#171;Borodinski&#187;<br>Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>Телефон: +7 (495) 666-02-666</p>
             </div>
             <div>
                 <h4>Давайте дружить!</h4>
-                <div class="footer-info-soc">
+                <div class="contact-info-socnet">
                     <a href=""></a>
                     <a href=""></a>
                     <a href=""></a>
                 </div>
             </div>
             <div>
-                <div class="footer-info-creater">
+                <div class="contact-info-creater">
                     <h4>Дизайн сайта:</h4>
                     <a href="http://glukhanko.ru">glukhanko.ru</a>
                 </div>

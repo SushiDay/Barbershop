@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet"> 
 </head>
 
-<body class="body-index">
+<body>
+<wrapper class="index-background">
     <header>
-        <nav class="clearfix">
-            <ul class="nav-buttons">
+        <nav class="main-menu clearfix">
+            <ul class="main-menu-sections">
                 <li><a class="active" href="">Главная</a></li>
                 <li><a href="">Информация</a></li>
                 <li><a href="">Новости</a></li>
@@ -20,14 +21,14 @@
                 <li><a href="">Магазин</a></li>
                 <li><a href="">Контакты</a></li>
             </ul>
-            <div class="nav-login">
+            <div class="main-menu-login">
                 <a href="">Вход</a>
             </div>
         </nav>
     </header>
     <wraper class="main-content">
         <img src="./img/main-logo-min.png" alt="logo">
-        <section class="features">
+        <section class="main-content-features">
             <div>
                 <h5>Быстро</h5>
                 <p>Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы &#8211; счастливый обладатель стильной стрижки-минутки!</p>
@@ -41,9 +42,9 @@
                 <p>Наши мастера &#8211; профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
             </div>
         </section>
-        <section class="main-info clearfix">
+        <section class="main-content-info clearfix">
             <img src="./img/layer.png" width="8px" height="100%" alt="divider">
-            <div class="main-info-lcolumn">
+            <div class="main-content-info-lcolumn">
                 <h3>Новости</h3>
                 <div>
                     <p>Нам наконец завезли ягермайстер! Теперь вы пожете пропустить стаканчик во время стрижки</p>
@@ -55,9 +56,9 @@
                 </div>
                 <a href="">Все новости</a>
             </div>
-            <div class="main-info-rcolumn">
+            <div class="main-content-info-rcolumn">
                 <h3>Фотогалерея</h3>
-                 <div class="gallery">  
+                 <div class="main-content-info-rcolumn-gallery">  
                     <a href="img/content-gallery-picture-min.jpg"><img src="img/content-gallery-picture-min.jpg" width="100%" alt="picture"></a>
                     <a href="img/content-gallery-picture-min.jpg"><img src="img/content-gallery-picture-min.jpg" width="100%" alt="picture"></a>
                     <a href="img/content-gallery-picture-min.jpg"><img src="img/content-gallery-picture-min.jpg" width="100%" alt="picture"></a>
@@ -75,57 +76,59 @@
                 </div>
             </div>
         </section>
-        <section class="main-info clearfix">
+        <section class="main-content-info clearfix">
             <img src="./img/layer.png" width="8px" height="100%" alt="divider">
-            <div class="main-info-lcolumn">
+            <div class="main-content-info-lcolumn">
                 <h3>Контактная информация</h3>
                 <div>
                     <p>Barbershop &#171;Borodinski&#187;<br>Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>Телефон: +7 (495) 666-02-666</p>
                 </div>
                 <div>
-                    <p>Время работы:</p>
-                    <time class="work-time">
-                        пн-пт: с 10:00 до 22:00<br>
-                        сб-вс: с 10:00 до 19:00
+                    <p>Время работы:<br>пн-пт: с 10:00 до 22:00<br>сб-вс: с 10:00 до 19:00</p>
+                    <time>
+                        
                     </time>
                 </div>
                 <a href="">Как проехать</a>
                 <a href="">Обратная связь</a>
             </div>
-            <div class="main-info-rcolumn">
+            <div class="main-content-info-rcolumn">
                 <h3>Записаться</h3>
-                <form action="">
+                <form class="main-content-info-rcolumn-book" action="">
                     <p>Укажите желаемую дату и время, и мы свяжемся с вами для подтверждения брони</p>
-                    <input type="text" placeholder="Дата" required>
-                    <input type="text" placeholder="Время" required>
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="text" placeholder="Телефон" required>
+                    <div>
+                        <input type="text" placeholder="Дата" required>
+                        <input type="text" placeholder="Время" required>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="text" placeholder="Телефон" required>
+                    </div>
                     <input type="submit" value="Отправить">
                 </form>
             </div>
         </section>
     </wraper>
     <footer>
-        <section class="footer-info">
+        <section class="contact-info">
             <div>
                 <p>Barbershop &#171;Borodinski&#187;<br>Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>Телефон: +7 (495) 666-02-666</p>
             </div>
             <div>
                 <h4>Давайте дружить!</h4>
-                <div class="footer-info-soc">
+                <div class="contact-info-socnet">
                     <a href=""></a>
                     <a href=""></a>
                     <a href=""></a>
                 </div>
             </div>
-            <div>
-                <div class="footer-info-creater">
+            <div class="clearfix">
+                <div class="contact-info-creater">
                     <h4>Дизайн сайта:</h4>
                     <a href="http://glukhanko.ru">glukhanko.ru</a>
                 </div>
             </div>
         </section>
     </footer>
+</wrapper>
 </body>
 
 </html>
