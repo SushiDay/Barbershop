@@ -14,11 +14,11 @@
     <header>
         <nav class="main-menu clearfix">
             <ul class="main-menu-sections">
-                <li><a class="active" href="">Главная</a></li>
+                <li><a class="active" href="index.html">Главная</a></li>
                 <li><a href="">Информация</a></li>
                 <li><a href="">Новости</a></li>
-                <li><a href="">Прайс-лист</a></li>
-                <li><a href="">Магазин</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="shop.html">Магазин</a></li>
                 <li><a href="">Контакты</a></li>
             </ul>
             <div class="main-menu-login">
@@ -26,7 +26,7 @@
             </div>
         </nav>
     </header>
-    <wraper class="main-content">
+    <wrapper class="main-content">
         <img src="./img/main-logo-min.png" alt="logo">
         <section class="main-content-features">
             <div>
@@ -106,7 +106,7 @@
                 </form>
             </div>
         </section>
-    </wraper>
+    </wrapper>
     <footer>
         <section class="contact-info">
             <div>
@@ -128,6 +128,27 @@
             </div>
         </section>
     </footer>
+    <wrapper class="authorization-popup">
+        <section class="authorization-block">
+            <form class="authorization-block-form" action="">
+                <h3>Личный кабинет</h3>
+                <p>Введите, пожалуйста, свой логин и пароль</p>
+                <div>
+                    <input type="text" placeholder="Логин" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Пароль" required>
+                </div>
+                <div class="authorization-block-buttons clearfix">
+                    <input id="login-rem" type="checkbox" name="checkbox1"/>
+                    <label for="login-rem">Запомнить меня</label>
+                    <a href="">Я забыл пароль!</a>
+                </div>
+                <input type="submit" value="Войти">
+            </form>
+            <div></div>
+        </section>
+    </wrapper>
 </wrapper>
 </body>
 
